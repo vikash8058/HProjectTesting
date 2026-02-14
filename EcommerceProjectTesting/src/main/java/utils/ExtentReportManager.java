@@ -1,13 +1,13 @@
 package utils;
 
-import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.*;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 public class ExtentReportManager {
 
 	private static ExtentReports extent;
 
-	public static ExtentReports getReportInstance() {
+	public static ExtentReports getInstance() {
 
 		if (extent == null) {
 
@@ -15,9 +15,6 @@ public class ExtentReportManager {
 
 			extent = new ExtentReports();
 			extent.attachReporter(spark);
-
-			extent.setSystemInfo("Project", "Automation Exercise");
-			extent.setSystemInfo("Environment", "QA");
 		}
 
 		return extent;

@@ -9,7 +9,7 @@ import org.testng.*;
 
 public class TestListener implements ITestListener {
 
-	private static ExtentReports extent = ExtentReportManager.getReportInstance();
+	private static ExtentReports extent = ExtentReportManager.getInstance();
 
 	private static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
 
