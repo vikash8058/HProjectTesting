@@ -5,7 +5,7 @@
 	</listeners>
 
 	<test name="RegressionTests">
-
+	
 		<classes>
 			<class name="tests.ContactUsTest" />
 			<class name="tests.HomePageTest" />
