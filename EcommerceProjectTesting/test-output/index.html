@@ -51,6 +51,7 @@
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
                     <span>C:\Users\ASUS\AppData\Local\Temp\testng-eclipse-320786067\testng-customsuite.xml</span>
+                    <span>C:\Users\Kundu\AppData\Local\Temp\testng-eclipse-220991607\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,6 +94,7 @@
                 <ul>
                   <li>
                     <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -114,6 +116,9 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="verifyLogoutFunctionality">verifyLogoutFunctionality</a> <!-- method navigator-link -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="tests.CartTest" class="method navigator-link" hash-for-method="verifyProductDetailsInCart">verifyProductDetailsInCart</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -132,6 +137,7 @@
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">tests.LoginTest</span>
+              <span class="class-name">tests.CartTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -153,6 +159,9 @@
                   <a name="verifyLogoutFunctionality">
                   </a> <!-- verifyLogoutFunctionality -->
                   <span class="method-name">verifyLogoutFunctionality</span>
+                  <a name="verifyProductDetailsInCart">
+                  </a> <!-- verifyProductDetailsInCart -->
+                  <span class="method-name">verifyProductDetailsInCart</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -161,6 +170,7 @@
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">C:\Users\ASUS\AppData\Local\Temp\testng-eclipse-320786067\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Kundu\AppData\Local\Temp\testng-eclipse-220991607\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -170,6 +180,11 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;tests.LoginTest&quot;/&gt;
+      &lt;class name=&quot;tests.CartTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;verifyProductDetailsInCart&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- tests.CartTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -222,11 +237,17 @@ data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verifyLoginWithInvalidCredentials')
 data.setCell(2, 2, 'tests.LoginTest')
 data.setCell(2, 3, 9120);
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyProductDetailsInCart')
+data.setCell(0, 2, 'tests.CartTest')
+data.setCell(0, 3, 43050);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
               <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 43 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -241,9 +262,18 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.CartTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyRemoveProductFromCart</span>
+                <br/>
+                <span class="ignored-method-name">verifyCartPageNavigation</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -253,6 +283,7 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.CartTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
@@ -300,6 +331,13 @@ return data;
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
                 <span class="method-start">154007 ms</span>
+              <div class="test-method">
+                <span class="method-name">verifyProductDetailsInCart</span>
+                <span class="method-start">4128 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">47181 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

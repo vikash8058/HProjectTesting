@@ -4,4 +4,12 @@
   <testcase classname="tests.LoginTest" name="verifyLoginWithValidCredentials" time="34.58"/>
   <testcase classname="tests.LoginTest" name="verifyLoginWithInvalidCredentials" time="9.12"/>
   <testcase classname="tests.LoginTest" name="verifyLogoutFunctionality" time="17.224"/>
+<testsuite ignored="2" hostname="KUNDU" failures="0" tests="1" name="Default test" time="47.48" errors="0" timestamp="2026-02-16T10:07:51 IST">
+  <testcase classname="tests.CartTest" name="verifyProductDetailsInCart" time="43.05"/>
+  <testcase classname="tests.CartTest" name="verifyRemoveProductFromCart" time="0.0">
+    <ignored/>
+  </testcase> <!-- verifyRemoveProductFromCart -->
+  <testcase classname="tests.CartTest" name="verifyCartPageNavigation" time="0.0">
+    <ignored/>
+  </testcase> <!-- verifyCartPageNavigation -->
 </testsuite> <!-- Default test -->
