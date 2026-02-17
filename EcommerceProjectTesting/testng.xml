@@ -1,19 +1,17 @@
 <suite name="AutomationSuite">
 
-	<listeners>
-		<listener class-name="listeners.TestListener" />
-	</listeners>
+    <listeners>
+        <listener class-name="listeners.TestListener" />
+    </listeners>
 
-	<test name="RegressionTests">
-
-		<classes>
-			<class name="tests.ContactUsTest" />
-			<class name="tests.HomePageTest" />
-			<class name="tests.ProductsTest" />
-			<class name="tests.LoginTest" />
-			<class name="tests.CartTest" />
-		</classes>
-
-	</test>
+    <test name="RegressionTests">
+        <classes>
+            <class name="tests.ContactUsTest" />
+            <class name="tests.HomePageTest" />
+            <class name="tests.ProductsTest" />
+            <class name="tests.LoginTest" />
+            <class name="tests.CartTest" />
+        </classes>
+    </test>
 
 </suite>
