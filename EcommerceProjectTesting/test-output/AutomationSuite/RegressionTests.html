@@ -55,11 +55,19 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>RegressionTests</h2><table border='1' align="center">
 <tr>
+<<<<<<< HEAD
 <td>Tests passed/Failed/Skipped:</td><td>11/2/0</td>
 </tr><tr>
 <td>Started on:</td><td>Mon Feb 16 10:11:11 IST 2026</td>
 </tr>
 <tr><td>Total time:</td><td>108 seconds (108003 ms)</td>
+=======
+<td>Tests passed/Failed/Skipped:</td><td>20/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Feb 16 17:14:16 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>382 seconds (382153 ms)</td>
+>>>>>>> 4be66fdc86e0af1d25d188f0d065dcf13d9e2570
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,13 +84,19 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<<<<<<< HEAD
 <td title='tests.CartTest.verifyRemoveProductFromCart()'><b>verifyRemoveProductFromCart</b><br>Test class: tests.CartTest</td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[contains(text(),&apos;Cart is empty&apos;)]&quot;}
   (Session info: chrome=144.0.7559.133)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+=======
+<td title='tests.ProductsTest.verifyAddToCartFunctionality()'><b>verifyAddToCartFunctionality</b><br>Test class: tests.ProductsTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (a1b8df1428fd86bd5221b27eaca0b29e)] -&gt; xpath: //div[@class=&apos;col-sm-9 padding-right&apos;]//div[2]//div[1]//div[1]//div[2]//div[1]//a[1]] (tried for 10 second(s) with 500 milliseconds interval)
+>>>>>>> 4be66fdc86e0af1d25d188f0d065dcf13d9e2570
 Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
+<<<<<<< HEAD
 Command: [a92a0f4da93cbdd376ad11deff56ac8f, findElement {value=//p[contains(text(),&apos;Cart is empty&apos;)], using=xpath}]
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\Kundu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60750}, goog:processID: 19164, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60750/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
 Session ID: a92a0f4da93cbdd376ad11deff56ac8f
@@ -107,9 +121,21 @@ Session ID: a92a0f4da93cbdd376ad11deff56ac8f
 <div class='stack-trace' id='stack-trace1146859833'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[contains(text(),&apos;Cart is empty&apos;)]&quot;}
   (Session info: chrome=144.0.7559.133)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+=======
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\ASUS\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55022}, goog:processID: 12432, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55022/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a1b8df1428fd86bd5221b27eaca0b29e
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.ProductsPage.clickFirstAddToCart(ProductsPage.java:99)
+	at tests.ProductsTest.verifyAddToCartFunctionality(ProductsTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace580979398", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace580979398'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on windows (a1b8df1428fd86bd5221b27eaca0b29e)] -&gt; xpath: //div[@class=&apos;col-sm-9 padding-right&apos;]//div[2]//div[1]//div[1]//div[2]//div[1]//a[1]] (tried for 10 second(s) with 500 milliseconds interval)
+>>>>>>> 4be66fdc86e0af1d25d188f0d065dcf13d9e2570
 Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
+<<<<<<< HEAD
 Command: [a92a0f4da93cbdd376ad11deff56ac8f, findElement {value=//p[contains(text(),&apos;Cart is empty&apos;)], using=xpath}]
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\Kundu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60750}, goog:processID: 19164, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60750/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
 Session ID: a92a0f4da93cbdd376ad11deff56ac8f
@@ -132,6 +158,14 @@ Session ID: a92a0f4da93cbdd376ad11deff56ac8f
 	at jdk.proxy2/jdk.proxy2.$Proxy14.isDisplayed(Unknown Source)
 	at pages.CartPage.isCartEmptyMessageDisplayed(CartPage.java:76)
 	at tests.CartTest.verifyRemoveProductFromCart(CartTest.java:53)
+=======
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\ASUS\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55022}, goog:processID: 12432, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55022/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a1b8df1428fd86bd5221b27eaca0b29e
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.ProductsPage.clickFirstAddToCart(ProductsPage.java:99)
+	at tests.ProductsTest.verifyAddToCartFunctionality(ProductsTest.java:67)
+>>>>>>> 4be66fdc86e0af1d25d188f0d065dcf13d9e2570
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -159,6 +193,7 @@ Session ID: a92a0f4da93cbdd376ad11deff56ac8f
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
+<<<<<<< HEAD
 <td>5</td>
 <td>tests.CartTest@3aa078fd</td></tr>
 <tr>
@@ -243,6 +278,10 @@ Session ID: 646880aa5854320bccadc833f1c7e81c
 </pre></div></td>
 <td>2</td>
 <td>tests.ContactUsTest@3feb2dda</td></tr>
+=======
+<td>10</td>
+<td>tests.ProductsTest@2ad48653</td></tr>
+>>>>>>> 4be66fdc86e0af1d25d188f0d065dcf13d9e2570
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -253,6 +292,7 @@ Session ID: 646880aa5854320bccadc833f1c7e81c
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<<<<<<< HEAD
 <td title='tests.HomePageTest.verifyFeaturedItemsSection()'><b>verifyFeaturedItemsSection</b><br>Test class: tests.HomePageTest</td>
 <td></td>
 <td>0</td>
@@ -272,10 +312,37 @@ Session ID: 646880aa5854320bccadc833f1c7e81c
 <td></td>
 <td>14</td>
 <td>tests.ContactUsTest@3feb2dda</td></tr>
+=======
+<td title='tests.LoginTest.verifyLoginWithInvalidCredentials()'><b>verifyLoginWithInvalidCredentials</b><br>Test class: tests.LoginTest</td>
+<td></td>
+<td>1</td>
+<td>tests.LoginTest@6bb4dd34</td></tr>
+<tr>
+<td title='tests.HomePageTest.verifyHomePageLoaded()'><b>verifyHomePageLoaded</b><br>Test class: tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.HomePageTest@32115b28</td></tr>
+<tr>
+<td title='tests.ContactUsTest.verifyContactUsFormSubmission()'><b>verifyContactUsFormSubmission</b><br>Test class: tests.ContactUsTest</td>
+<td></td>
+<td>2</td>
+<td>tests.ContactUsTest@1f9f6368</td></tr>
+<tr>
+<td title='tests.ProductsTest.verifyAllProductsDisplayed()'><b>verifyAllProductsDisplayed</b><br>Test class: tests.ProductsTest</td>
+<td></td>
+<td>3</td>
+<td>tests.ProductsTest@2ad48653</td></tr>
+<tr>
+<td title='tests.ContactUsTest.verifyInvalidEmailFormat()'><b>verifyInvalidEmailFormat</b><br>Test class: tests.ContactUsTest</td>
+<td></td>
+<td>2</td>
+<td>tests.ContactUsTest@1f9f6368</td></tr>
+>>>>>>> 4be66fdc86e0af1d25d188f0d065dcf13d9e2570
 <tr>
 <td title='tests.HomePageTest.verifyCategorySectionVisible()'><b>verifyCategorySectionVisible</b><br>Test class: tests.HomePageTest</td>
 <td></td>
 <td>0</td>
+<<<<<<< HEAD
 <td>tests.HomePageTest@1f9e9475</td></tr>
 <tr>
 <td title='tests.HomePageTest.verifyScrollUpFeature()'><b>verifyScrollUpFeature</b><br>Test class: tests.HomePageTest</td>
@@ -302,11 +369,83 @@ Session ID: 646880aa5854320bccadc833f1c7e81c
 <td></td>
 <td>4</td>
 <td>tests.CartTest@3aa078fd</td></tr>
+=======
+<td>tests.HomePageTest@32115b28</td></tr>
+<tr>
+<td title='tests.ContactUsTest.verifyFileUploadFieldEnabled()'><b>verifyFileUploadFieldEnabled</b><br>Test class: tests.ContactUsTest</td>
+<td></td>
+<td>1</td>
+<td>tests.ContactUsTest@1f9f6368</td></tr>
+<tr>
+<td title='tests.ContactUsTest.verifyContactUsPageLoads()'><b>verifyContactUsPageLoads</b><br>Test class: tests.ContactUsTest</td>
+<td></td>
+<td>1</td>
+<td>tests.ContactUsTest@1f9f6368</td></tr>
+<tr>
+<td title='tests.ProductsTest.verifySearchProduct()'><b>verifySearchProduct</b><br>Test class: tests.ProductsTest</td>
+<td></td>
+<td>11</td>
+<td>tests.ProductsTest@2ad48653</td></tr>
+<tr>
+<td title='tests.HomePageTest.verifyScrollUpFeature()'><b>verifyScrollUpFeature</b><br>Test class: tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.HomePageTest@32115b28</td></tr>
+>>>>>>> 4be66fdc86e0af1d25d188f0d065dcf13d9e2570
 <tr>
 <td title='tests.CartTest.verifyCartPageNavigation()'><b>verifyCartPageNavigation</b><br>Test class: tests.CartTest</td>
 <td></td>
 <td>1</td>
+<<<<<<< HEAD
 <td>tests.CartTest@3aa078fd</td></tr>
+=======
+<td>tests.CartTest@54e041a4</td></tr>
+<tr>
+<td title='tests.CartTest.verifyProductDetailsInCart()'><b>verifyProductDetailsInCart</b><br>Test class: tests.CartTest</td>
+<td></td>
+<td>10</td>
+<td>tests.CartTest@54e041a4</td></tr>
+<tr>
+<td title='tests.CartTest.verifyRemoveProductFromCart()'><b>verifyRemoveProductFromCart</b><br>Test class: tests.CartTest</td>
+<td></td>
+<td>5</td>
+<td>tests.CartTest@54e041a4</td></tr>
+<tr>
+<td title='tests.LoginTest.verifyLogoutFunctionality()'><b>verifyLogoutFunctionality</b><br>Test class: tests.LoginTest</td>
+<td></td>
+<td>3</td>
+<td>tests.LoginTest@6bb4dd34</td></tr>
+<tr>
+<td title='tests.ProductsTest.verifyViewProductNavigation()'><b>verifyViewProductNavigation</b><br>Test class: tests.ProductsTest</td>
+<td></td>
+<td>117</td>
+<td>tests.ProductsTest@2ad48653</td></tr>
+<tr>
+<td title='tests.ContactUsTest.verifyFormSubmissionWithoutData()'><b>verifyFormSubmissionWithoutData</b><br>Test class: tests.ContactUsTest</td>
+<td></td>
+<td>2</td>
+<td>tests.ContactUsTest@1f9f6368</td></tr>
+<tr>
+<td title='tests.HomePageTest.verifyFeaturedItemsSection()'><b>verifyFeaturedItemsSection</b><br>Test class: tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.HomePageTest@32115b28</td></tr>
+<tr>
+<td title='tests.ProductsTest.verifyProductsPageLoads()'><b>verifyProductsPageLoads</b><br>Test class: tests.ProductsTest</td>
+<td></td>
+<td>2</td>
+<td>tests.ProductsTest@2ad48653</td></tr>
+<tr>
+<td title='tests.HomePageTest.verifyFooterVisible()'><b>verifyFooterVisible</b><br>Test class: tests.HomePageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.HomePageTest@32115b28</td></tr>
+<tr>
+<td title='tests.LoginTest.verifyLoginWithValidCredentials()'><b>verifyLoginWithValidCredentials</b><br>Test class: tests.LoginTest</td>
+<td></td>
+<td>26</td>
+<td>tests.LoginTest@6bb4dd34</td></tr>
+>>>>>>> 4be66fdc86e0af1d25d188f0d065dcf13d9e2570
 </table><p>
 </body>
 </html>
